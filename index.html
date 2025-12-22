@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deez Entertainment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/deeze.jpg" alt="Deez Entertainment Logo" class="logo">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="abountus.html">aboutus</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>Welcome to Deez Entertainment</h1>
+
+        <section class="cards">
+            <article class="card">
+                <h2>Our Activities</h2>
+                <img src="images/sports.avif" alt="Sporting activities">
+                <p>We organize various sporting activities:</p>
+                <ul>
+                    <li>⚽ Football Tournament</li>
+                    <li>🏀 Basketball League</li>
+                    <li>🏃 Marathon Events</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Our Events</h2>
+                <img src="images/beach.webp" alt="Beach outing">
+                <p>Exciting events throughout the year.</p>
+                <ul>
+                    <li>Beach Outing</li>
+                    <li>Hiking Adventures</li>
+                    <li>Street Carnival</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Collaborations</h2>
+                <img src="images/collab.webp" alt="Collaborations">
+                <p>We partner with top organizations.</p>
+                <ul>
+                    <li>Sports Clubs</li>
+                    <li>Community Centers</li>
+                    <li>Corporate Partners</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <!-- ✅ JAVASCRIPT GOES HERE -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+    <div class="socials">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/whatapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+    </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

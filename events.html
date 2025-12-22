@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Deez Entertainment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/deeze.jpg" alt="Deez Entertainment Logo" class="logo">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="abountus.html">aboutus</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main events-container">
+        <h1>Our Events</h1>
+
+        <section class="event-card">
+            <h2>Upcoming Events</h2>
+            <p>Don’t miss our upcoming activities:</p>
+            <ul>
+                <li>🏖️ Beach Outing — June 15, 2025</li>
+                <li>🥾 Hiking Adventure — July 20, 2025</li>
+                <li>🎉 Street Carnival — August 10, 2025</li>
+            </ul>
+        </section>
+
+        <section class="event-card">
+            <h2>Past Events</h2>
+            <p>Some of our successfully completed events:</p>
+            <ul>
+                <li>🏖️ Beach Outing — June 15, 2024</li>
+                <li>🥾 Hiking Adventure — July 20, 2024</li>
+                <li>🎉 Street Carnival — August 10, 2024</li>
+            </ul>
+        </section>
+
+        <section class="event-card">
+            <h2>Event Gallery</h2>
+            <p>Highlights from our previous events:</p>
+            <ul>
+                <li>Beach Outing</li>
+                <li>Hiking Adventure</li>
+                <li>Street Carnival</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ✅ JAVASCRIPT GOES HERE -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+    <footer class="footer">
+        <p>© 2025 Deez Entertainment SL. All rights reserved.</p>
+
+        <div class="socials">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/whatapp.png" alt="WhatsApp"></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+
+</body>
+
+</html>

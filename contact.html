@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Deez Entertainment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/deeze.jpg" alt="Deez Entertainment Logo" class="logo">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="abountus.html">aboutus</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="events.html">Events</a>
+        </nav>
+    </header>
+
+    <main class="main contact-container">
+        <section class="contact-card">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Reach out using the information below.</p>
+
+            <ul class="contact-list">
+                <li><strong>Email:</strong> info@deezentertainment.sl</li>
+                <li><strong>Phone:</strong> +232 77 123 456</li>
+                <li><strong>Address:</strong> 123 Entertainment Street, Freetown, Sierra Leone</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ✅ JAVASCRIPT GOES HERE -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+
+    <footer class="footer">
+        <p>© 2025 Deez Entertainment SL. All rights reserved.</p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

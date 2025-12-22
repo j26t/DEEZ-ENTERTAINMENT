@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Deez Entertainment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="aboutus">
+    <header class="header">
+        <img src="images/deeze.jpg" alt="Deez Entertainment Logo" class="logo">
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="abountus.html" class="active">aboutus</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main about-container">
+        <section class="about-section">
+            <h1>Our History</h1>
+            <p>
+                Deez Entertainment SL is one of the most influential and prolific entertainment
+                organizations in Sierra Leone. Our mission is to build confidence and promote the
+                younger generation toward a brighter and better future.
+            </p>
+
+            <p>
+                We aim to unite Sierra Leoneans through love, peace, and unity while producing
+                reality TV shows, music and movie productions, event promotions, and creative
+                collaborations across the country and beyond.
+            </p>
+
+            <p class="tagline">
+                <strong>DEEZ FOR THE GEEZ — STRICTLY FOR THE GEEZ.</strong>
+            </p>
+        </section>
+
+        <section class="about-section ceo-section">
+            <h2>Biography of the CEO</h2>
+
+            <div class="ceo-content">
+                <img src="images/wise.jpg" alt="Mr. Mohammed Kargbo">
+
+                <p>
+                    Mr. Mohammed Kargbo is a dedicated Sierra Leonean entrepreneur actively involved
+                    in show business and global collaborations. He attended Albert Academy Senior
+                    Secondary School and later studied Social Science at Njala University, Bo City.
+                </p>
+
+                <p>
+                    As the Founder and CEO of Deez Entertainment SL, he has successfully organized
+                    numerous sporting, entertainment, and community-based events. His vision and
+                    leadership continue to push Deez Entertainment SL to greater heights within the
+                    entertainment industry.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- ✅ JAVASCRIPT GOES HERE -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
+
+    <footer class="footer">
+        <p>© 2025 Deez Entertainment SL. All rights reserved.</p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
