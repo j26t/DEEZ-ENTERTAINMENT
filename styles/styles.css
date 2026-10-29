@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ============================================
    DEEZ ENTERTAINMENT - MODERN STYLES
    Green Theme with Concert Background
@@ -22,11 +23,16 @@
 
 /* Reset & Base */
 *, *::before, *::after {
+=======
+/* RESET */
+* {
+>>>>>>> cd7656493c58d0a9572ca5fd10160e781d82d705
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -409,10 +415,66 @@ body::after {
 
 .card:hover h2::after {
     width: 100%;
+=======
+/* GLOBAL */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #4caf50;
+}
+
+/* MAIN */
+.main h1 {
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 0 0 5px green;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+>>>>>>> cd7656493c58d0a9572ca5fd10160e781d82d705
 }
 
 .card img {
     width: 100%;
+<<<<<<< HEAD
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
@@ -430,10 +492,20 @@ body::after {
     color: var(--text-light);
     margin-bottom: 1rem;
     font-size: 0.95rem;
+=======
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.card h2 {
+    border-bottom: 2px solid #111;
+    margin-bottom: 10px;
+>>>>>>> cd7656493c58d0a9572ca5fd10160e781d82d705
 }
 
 .card ul {
     list-style: none;
+<<<<<<< HEAD
     padding: 0;
 }
 
@@ -907,10 +979,119 @@ body::after {
     color: var(--text-light);
     margin-bottom: 2rem;
     font-size: 1.05rem;
+=======
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+}
+
+.socials img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* ABOUT US PAGE */
+.about-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1,
+.about-section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 5px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 18px;
+    color: #2e7d32;
+}
+
+/* CEO SECTION */
+.ceo-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.ceo-content img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #2e7d32;
+}
+
+/* ACTIVE NAV LINK */
+.nav a.active {
+    color: #4caf50;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ceo-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .ceo-content img {
+        max-width: 250px;
+        margin: auto;
+    }
+}
+
+
+/* CONTACT PAGE */
+.contact-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #111;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-card p {
+    margin: 15px 0;
+>>>>>>> cd7656493c58d0a9572ca5fd10160e781d82d705
 }
 
 .contact-list {
     list-style: none;
+<<<<<<< HEAD
     text-align: left;
 }
 
@@ -1254,4 +1435,56 @@ body::after {
 
 @keyframes loading-fill {
     to { width: 100%; }
+=======
+    margin-top: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ACTIVE NAV */
+.nav a.active {
+    color: #4caf50;
+}
+
+/* EVENTS PAGE */
+.events-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.events-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h2 {
+    border-bottom: 2px solid #111;
+    margin-bottom: 10px;
+}
+
+
+
+.event-card ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+
+.event-card li {
+    margin-bottom: 8px;
+    font-size: 16px;
+>>>>>>> cd7656493c58d0a9572ca5fd10160e781d82d705
 }
